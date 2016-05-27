@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Groupie</title>
+      <link rel="stylesheet" href="css/global.css" />
+   </head>
+   <body>
+      <div id="app">
+         <header>
+            <div class="artist-name"><h1 id="page-title-artist-name"></h1></div>
+            <a href="/"><div class="brand"><h1>Groupie</h1></div></a>
+            <div id="user-menu-button" class="menu-icon-box"><i class="fa fa-bars"></i></div>
+         </header>
+         <main>
+            <section id="hearit" class="hearit">
+               <div class="content-wheel">
+                  <div class="navigation">
+                     <ul class="list">
+                        <li isfor="albums" class="item active">Albums</li>
+                        <li isfor="tracks" class="item">Tracks</li>
+                        <li isfor="info" class="item">Information</li>
+                     </ul>
+                  </div>
+                  <div class="content-wheel-inner">
+                     <div id="wheel-albums" class="wheel-item active"></div>
+                     <div id="wheel-tracks" class="wheel-item"></div>
+                     <div id="wheel-info" class="wheel-item">
+                        <!-- <div class="topic">
+                           <h1 class="title"></h1>
+                           <p class="description"></p>
+                        </div>
+                        <img src="http://t2.gstatic.com/images?q=tbn:ANd9GcSx2zIckfa1zu9YqhKrYoPU6NTSmO894FE2VFUQwhviJJxLAW9R" alt="something" class="topic-img"> -->
+
+                     </div>
+                  </div>
+               </div>
+               <div id="spotify-play" class="iframe-box spotify-embed"></div>
+
+            </section>
+            <section id="seeit" class="seeit">
+               <div class="seeit-inner">
+                  <div class="content-header"><h1 class="title">Concerts</h1></div>
+               </div>
+            </section>
+            <!-- <section id="singit" class="singit"></section>
+            <section id="discoverit" class="discoverit"></section> -->
+         </main>
+      </div>
+   </body>
+   <!-- <script src="https://use.fontawesome.com/bd68128bcd.js"></script> -->
+   <script src="js/User.js" charset="utf-8"></script>
+   <script src="js/Ajax.js" charset="utf-8"></script>
+   <script src="js/modal.js" charset="utf-8"></script>
+   <script src="js/menu.js" charset="utf-8"></script>
+   <script src="js/dashboard/app.js" charset="utf-8"></script>
+   <script src="https://use.fontawesome.com/bd68128bcd.js"></script>
+</html>
