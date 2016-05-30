@@ -120,7 +120,7 @@ var User = function() {
       }
       //add artist
       this.artists.push(artist);
-      console.log("this: ", this);
+      // console.log("this: ", this);
       localStorage.setItem(MODEL, JSON.stringify(this));
 
       // if (artist.name.length > 15) {

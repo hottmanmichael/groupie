@@ -80,7 +80,7 @@ Notification.prototype.show = function () {
          this.createList(this.render.bind(this)); //bind to attach this portal to render method
       } else this.render();
    }
-   console.log("this.hasList(): ", this.hasList());
+   // console.log("this.hasList(): ", this.hasList());
 
 };
 

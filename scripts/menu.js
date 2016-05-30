@@ -70,9 +70,20 @@
          returnHome.className = "fa fa-home go-home";
          returnHome.addEventListener('click', handleReturnHome);
 
+      var githubLink = document.createElement('a');
+         githubLink.className = 'github-link';
+         githubLink.target = "_blank";
+         githubLink.href = "https://github.com/hottmanmichael/groupie";
+         var github = document.createElement('i');
+            github.className = 'gh fa fa-github';
+         githubLink.appendChild(github);
+
+
+
       menuInner.appendChild(returnHome);
       menuInner.appendChild(close);
       menuInner.appendChild(menuTitle);
+      menuInner.appendChild(githubLink);
 
       //show the current artist, or handle if no current artist
       var current = document.createElement('div');
@@ -165,10 +176,13 @@
 
 })();
 
-
 function stopBodyScroll() {
+   // var app = document.getElementById('app');
    document.body.classList.add('noscroll');
+   // app.classList.add('noscroll');
 }
 function resumeBodyScroll() {
+   // var app = document.getElementById('app');
    document.body.classList.remove('noscroll');
+   // app.classList.remove('noscroll');
 }
